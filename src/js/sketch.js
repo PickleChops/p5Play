@@ -2,7 +2,6 @@
  * Play around with P5 - I used to like Processing, it was very accessible, so trying out p5
  */
 
-
 var frameRater = null;
 
 /**
@@ -14,9 +13,15 @@ function setup() {
 	frameRater = new ShowFrameRate();
 }
 
+/**
+ * Draw loop
+ */
 function draw() {
-	ellipse(mouseX, mouseY, Math.random() * 100, Math.random() * 100);
-	frameRater.on();
+//	frameRater.show();
+
+
+
+
 }
 
 
@@ -28,7 +33,7 @@ function ShowFrameRate() {
 	this.textHeight = 25;
 	this.fpsString = 'FPS : ';
 
-	this.on = function () {
+	this.show = function () {
 		push();
 		translate(0, 0);
 
